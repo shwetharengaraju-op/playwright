@@ -1,0 +1,83 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-feature;validate-the-login-page1",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Validate the login page1",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2061147600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user opens the application",
+            "match": {
+              "location": "step_definitions\\loginStep.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2226561200
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "ShwethaR"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "P6Y2SM"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "enter the details for form",
+            "match": {
+              "location": "step_definitions\\loginStep.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 765152500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1079095100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Feature",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]
