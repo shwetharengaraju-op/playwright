@@ -2,7 +2,8 @@ const BasePage =require('./basePage');
 require('dotenv').config
 
 
-//loginpage details
+//loginpage details entered in github
+//change from github
 class LoginPage extends BasePage{
       constructor(page){
         super(page)
