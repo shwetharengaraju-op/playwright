@@ -1,5 +1,6 @@
 
 //base page helps us as the building block for all the pages
+//changes made in git hub
 class BasePage{
     constructor(page){
         this.page =page
