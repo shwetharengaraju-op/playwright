@@ -1,2 +1,1 @@
-second line from branch
-second line for feature
+changes from feature branch
