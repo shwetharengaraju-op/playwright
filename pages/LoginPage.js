@@ -1,6 +1,8 @@
 const BasePage =require('./basePage');
 require('dotenv').config
 
+
+//loginpage details
 class LoginPage extends BasePage{
       constructor(page){
         super(page)
