@@ -1,3 +1,5 @@
+
+//base page helps us as the building block for all the pages
 class BasePage{
     constructor(page){
         this.page =page
