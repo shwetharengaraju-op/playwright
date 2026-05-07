@@ -6,7 +6,7 @@
         "description": "",
         "id": "login-feature;validate-the-login-page1",
         "keyword": "Scenario",
-        "line": 5,
+        "line": 4,
         "name": "Validate the login page1",
         "steps": [
           {
@@ -14,20 +14,20 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2061147600
+              "duration": 2566133400
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 5,
             "name": "user opens the application",
             "match": {
               "location": "step_definitions\\loginStep.js:4"
             },
             "result": {
               "status": "passed",
-              "duration": 2226561200
+              "duration": 2997326700
             }
           },
           {
@@ -50,14 +50,14 @@
               }
             ],
             "keyword": "When ",
-            "line": 7,
+            "line": 6,
             "name": "enter the details for form",
             "match": {
               "location": "step_definitions\\loginStep.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 765152500
+              "duration": 721750100
             }
           },
           {
@@ -65,11 +65,16 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1079095100
+              "duration": 1397596599
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          }
+        ],
         "type": "scenario"
       }
     ],
