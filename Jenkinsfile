@@ -42,7 +42,7 @@ pipeline {
     stage('Install Playwright Browsers') {
       steps {
         bat'''
-          npx playwright install --with-deps
+           npx playwright install
         '''
       }
     }
@@ -67,10 +67,10 @@ pipeline {
   post {
     always {
       // Archive reports if you generate them
-      archiveArtifacts artifacts: 'reports/*/, cucumber-report/*/, test-results/*/, playwright-report/*/', allowEmptyArchive: true
+      archiveArtifacts artifacts: 'reports/**, cucumber-report/**, test-results/**, playwright-report/**', allowEmptyArchive: true
 
       // Optional JUnit publish (only if you generate junit xml)
-      junit testResults: 'test-results/*/.xml', allowEmptyResults: true
+      junit testResults: 'test-results/*.xml', allowEmptyResults: true
 
       // Optional: publish HTML report (needs "HTML Publisher" plugin)
       publishHTML(target: [
