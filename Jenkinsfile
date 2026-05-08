@@ -32,7 +32,11 @@ pipeline {
       steps {
         bat'''
           node -v
+          '''
+        bat'''
           npm -v
+          '''
+        bat'''
           npm ci
         '''
       }
@@ -71,15 +75,7 @@ pipeline {
       // Optional JUnit publish (only if you generate junit xml)
       junit testResults: 'test-results/*.xml', allowEmptyResults: true
 
-      // Optional: publish HTML report (needs "HTML Publisher" plugin)
-      publishHTML(target: [
-        allowMissing: true,
-        alwaysLinkToLastBuild: true,
-        keepAll: true,
-        reportDir: 'cucumber-report',
-        reportFiles: 'index.html',
-        reportName: 'Cucumber HTML Report'
-      ])
+      
     }
   }
   
